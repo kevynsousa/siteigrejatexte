@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+body{
+    background:linear-gradient( to right, rgb(31,38,57)30%,rgb(55,56,123)) ;
+    font-family: 'Open Sans','icones', sans-serif;
+    color: aliceblue;
+
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color:rgb(31,38,57) ;
+}
+
+.cabecalho__menu i::before{
+    content: "\e904";
+    font-size: 25px;
+
+}
+.cabecalho_logo{
+    width: 150px;
+}
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(31,38,57) ;
+    width: 75vw;
+    height: 100vh;
+    position: absolute;
+    left: -100vh;
+    transition: .25s;
+}
+
+.menu-lateral--ativo{
+    left: 0;
+    transition: .25s;}
+
+.menu-lateral__link--ativo{
+    color: aliceblue;
+    padding-left: 56px;
+    border-left: 8px solid aliceblue;
+    }
+
+
+.menu-lateral__logo{
+    width:200px ;
+    align-self: center;
+    padding: 16px;
+}
+.menu-lateral__link{
+    padding-left: 64px;
+    height: 64px;
+    color: #95999C;
+    display:flex;
+    align-items: center;
+}
+.menu-lateral__link::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+.menu-lateral__link--lagoinha::before{
+    content: "\e902";
+}
+.menu-lateral__link--ministerio::before{
+    content:"\e903";
+}
+.menu-lateral__link--celulas::before{
+    content:"\e900";
+}
+.menu-lateral__link--eventos::before{
+    content:"\e90a";
+}
+.menu-lateral__link--midia::before{
+    content:  "\e90e";
+}
+.menu-lateral__link--contato::before{
+    content: "\e909";
+}
+.menu-lateral__link:hover{
+    color: rgb(255, 255, 255);
+    
+    transition: 1s all;
+    cursor: pointer; 
+    font-size: 20px; 
+}
